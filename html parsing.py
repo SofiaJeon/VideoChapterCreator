@@ -1,20 +1,17 @@
 pip install flask
+pip install requests
+
 
 from flask import Flask, render_template, redirect, request, url_for
-app = Flask(__name__)
+from flask import request
 
-@app.route('/')
-@app.route('/<string:url>')
-def inputTest(url=None):
-    return render_template('home.html', url=url)
+def create()
+    if request.method == 'POST':
+        url = request.form['url']
+        if url == None:
+            print ("no url is given yet.")
+        else:
+            print ("url is given.")
 
-@app.route('/create',methods=['GET'])
-def create(url=None):
-    if request.method == 'GET':
-        temp = request.form['url']
-    else:
-        temp = None
-    return redirect(url_for('html parsing',url=temp))
 
-if __name__ == '__main__':
-    app.run()
+creat()

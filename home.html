@@ -21,19 +21,9 @@
 
   <form method="GET" action="/create">
     <h4> copy and paste your youtube url </h4>
-    <input type="text" name="url">
+    <input type="text" name="url" value={{request.form.url}}>
     <button type="submit"> submit </button>
   </form>
-  <div>
-    <p>
-      {% if url == None %}
-        <h5> no url is given yet. </h5>
-      {% else %}
-        <h5> url is given now. </h5>
-      {% endif %}
-    </p>
-  </div>
-
 
 </body>
 </html>
