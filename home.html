@@ -10,7 +10,7 @@
     .black { color: black; }
 
   </style>
-  
+
   <h1 class="white">Video Chapter Creator<br>
   Automatic Video Chapter Creator with BERT NextSentencePrediction, LDA Topic Modeling and Sentence Generator</h1>
   <h2>What is Video Chapter Creator?</h1>
@@ -19,10 +19,24 @@
   <h2>How to use Video Chapter Creator?</h1>
   <p>Upload your video through "upload" button below, and click the "create" button. Timeline of the video will be offered ASAP. Just copy the timeline, and paste it on your YouTube. No worry, your video does not remain on our website. <br><br><br><br></p>
 
-  <form action="/action_page.php">
-    <input type="file" id="myFile" name="filename">
-    <input type="submit">
-  </form>
+  <input type="text" id="input"><br>
+  <textarea id="output"></textarea>
+  <button onclick="input()">입력 받기</button>
+  <button onclick="output()">출력하기</button>
+
+  <script type="text/javascript">
+  var temp;
+
+  function input(){
+    var input = document.getElementByld("input").value;
+    temp = input;
+  }
+
+  function output(){
+    document.getElementByld("output").value = temp;
+  }
+
+  </script>
 
 </body>
 </html>
