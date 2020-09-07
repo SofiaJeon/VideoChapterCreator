@@ -24,6 +24,15 @@
     <input type="text" name="url">
     <button type="submit"> submit </button>
   </form>
+  <div>
+    <p>
+      {% if url == None %}
+        <h5> no url is given yet. </h5>
+      {% else %}
+        <h5> url is given now. </h5>
+      {% endif %}
+    </p>
+  </div>
 
 
 </body>
