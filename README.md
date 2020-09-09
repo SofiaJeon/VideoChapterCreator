@@ -4,15 +4,7 @@ video chapter creator using BERT Next Sentence Prediction and LDA Topic Modeling
 <!DOCTYPE html>
 <html>
 <body>
-  <style>
 
-    h1 { background-color: black; }
-    h2 { background-color: white; }
-    p { background-color: white; }
-    .white { color: white; }
-    .black { color: black; }
-
-  </style>
 
   <h1 class="white">Video Chapter Creator<br>
   Automatic Video Chapter Creator with BERT NextSentencePrediction, LDA Topic Modeling and Sentence Generator</h1>
