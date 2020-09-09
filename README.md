@@ -1,3 +1,6 @@
+# CodeFest 2020
+해당 프로젝트는 [KC-ML2](https://www.kc-ml2.com/)에서 개최한 [CodeFest2020](https://blog.kc-ml2.com/codefest2020/)에 참가하여 진행한 내용입니다.
+
 # VideoChapterCreator
 Automatic Video Chapter Creator with BERT NextSentencePrediction and KeySentenceGenerator
 
