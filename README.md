@@ -18,8 +18,8 @@ There can be various purposes for learners to watch certain education video. For
 ![pipeline img](./img/pipeline_codefest.png)
 
 ## 1.3 Code Review
-### 1.3.1 Package Import
-```
+### 1.3.1 Package Install
+```python
 !pip install youtube_transcript_api
 !pip install transformers
 
@@ -29,7 +29,7 @@ There can be various purposes for learners to watch certain education video. For
 
 ### 1.3.2 Transcripts, NSP
 
-```
+```python
 from youtube_transcript_api import YouTubeTranscriptApi
 from urllib import parse
 import re
