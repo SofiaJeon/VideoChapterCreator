@@ -184,6 +184,15 @@ class Transcripts:
         self.transcripts = transcripts_intergrated
 ```
 
+```python
+url = "https://www.youtube.com/watch?v=bNb2fEVKeEo&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=5&ab_channel=StanfordUniversitySchoolofEngineering"
+transcripts = Transcripts(url)
+transcripts.transcripts_preprocess()
+transcripts.make_losses()
+transcripts.make_threshold()
+transcripts.transcripts_intergrate()
+```
+
 ### 1.3.3 Tokenizer
 
 ```python
