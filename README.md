@@ -19,6 +19,14 @@ There can be various purposes for learners to watch certain education video. For
 
 ## 1.3 Code Review
 ### 1.3.1 Package Import
+'''
+!pip install youtube_transcript_api
+!pip install transformers
+
+!python -m spacy download en
+!git clone https://github.com/lovit/textrank
+'''
+
 ### 1.3.2 Transcripts, NSP
 ### 1.3.3 Key Sentence Generator
 ### 1.3.4 Video Chapter creatoR
