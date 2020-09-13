@@ -27,7 +27,7 @@ There can be various purposes for learners to watch certain education video. For
 !git clone https://github.com/lovit/textrank
 ```
 
-### 1.3.2 Transcripts, NSP
+### 1.3.2 Transcripts, BERT NextSentencePrediction
 
 ```python
 from youtube_transcript_api import YouTubeTranscriptApi
@@ -184,9 +184,9 @@ class Transcripts:
         self.transcripts = transcripts_intergrated
 ```
 
-### 1.3.3 Key Sentence Generator
+### 1.3.3 Tokenizer
 
-```
+```python
 import nltk, spacy
 import gensim
 from gensim.utils import simple_preprocess
@@ -195,7 +195,7 @@ nltk.download('stopwords')
 from nltk.corpus import stopwords
 ```
 
-```
+```python
 def manysents_to_words(sentences):
         return [simple_preprocess(str(sentence), deacc=True) for sentence in sentences]
 
@@ -238,19 +238,21 @@ class Tokenizer:
             self.sentences.append(temp)
 ```
 
-```
+```python
 tokenizer = Tokenizer(transcripts.transcripts)
 tokenizer.make_sentences()
 ```
 
-```
+
+
+### 1.3.4 Video Chapter creatoR
+
+```python
 from textrank.textrank.summarizer import KeysentenceSummarizer
 from textrank.textrank.summarizer import KeywordSummarizer
 ```
 
-### 1.3.4 Video Chapter creatoR
-
-```
+```python
 import datetime
 
 summarizer = KeysentenceSummarizer(
